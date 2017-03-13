@@ -1,0 +1,281 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+#fix{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 0;
+	background-image: url(images/land.png);
+	background-size: 100% 100%;
+}
+#outerbox{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	z-index: -2;
+	justify-content: space-around;
+	align-items: center;
+	background-color: lightgrey;
+}
+#box{
+	margin-top: 9px;
+	padding-right: 1px;
+	width:64%;
+	height: 82%;
+	background-color: #e6e6e6;
+	overflow: auto;
+	z-index: 2;
+}
+#header{
+	display: flex;
+	padding: 20px;
+	padding-top: 70px;
+	background-color: #3b5998;
+	border-bottom: 1px solid black;
+	margin-bottom: 50px;
+}
+#image{
+	padding: 5px;
+	width:32%;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background-color: white;
+	border:1.5px solid black;
+}
+#inner-image{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+}
+#profile{
+	height: 100%;
+	width: 100%;
+}
+#name{
+	padding-left: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	align-items: flex-end;
+}
+.proj{
+	display: flex;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+	background-color:#bfbfbf;
+	justify-content: space-around; 
+	margin-bottom: 30px;
+	box-shadow: 0 8px 6px -6px black;
+}
+#myname{
+	color: white;
+	font-size: 5vw;
+	font-family: Georgia, serif;
+}
+.icons{
+	display: flex;
+	background-color: #bfbfbf;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 80px;
+	width: 30%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.container{
+	display: flex;
+	justify-content: space-around;
+}
+#two-col{
+	display: flex;
+	padding: 10px;
+	margin-bottom: 20px;
+	justify-content: space-around;
+}
+#two-col  ul{
+	list-style: none;
+}
+.two{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	background-color: #e6e6ff;
+	box-shadow: 0 8px 6px -6px black;
+	align-items: center;
+}
+.two > .icons{
+	width: 100%;
+}
+.two > .inside-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 0px;
+}
+.two > .inside-content > .inside-text{
+	padding-left: 0px;
+}
+#two-col > div:first-child{
+	border-right: 1px solid black;
+}
+.long{
+	display: flex;
+	margin-bottom: 20px;
+	background-color: #e6e6ff;
+	box-shadow: 0 8px 6px -6px black;
+}
+.inside-content{
+	width: 70%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+.inside-text{
+	padding-left: 20px;
+}
+.game > .inside-content > .inside-text{
+	padding-left: 44px;
+}
+.game > .inside-content{
+	padding-left: 80px;
+}
+#footer{
+	background-color: #3b5998;
+	display: flex;
+	padding: 10px;
+	border-top: 1px solid black;
+}
+#social{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+#address{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 50px;
+	border-left: 1px solid black;
+}
+#address > p {
+	padding-left: 10px;
+}
+#social i{
+	margin-right: 5px;
+}
+#social ul{
+	list-style: none;
+}
+p{
+	font-family: Arial, Helvetica, sans-serif
+}
+a{
+	text-decoration: none;
+
+}
+a:visited {
+    color: black;
+}
+@media screen and (orientation: portrait){
+	#fix{
+		background-image: url(images/potrait.png);
+		
+	}
+	#box{
+		margin-top: 0px;
+		margin-left: 9px;
+		width: 82%;
+		height: 64%;
+	}
+	#header{
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 5px;
+	}
+	#myname{
+		padding-left: 0px;
+		padding-top: 5px;
+		font-size: 7vw;
+	}
+	#name{
+		padding-left: 0px;
+		padding-bottom: 5px;
+	}
+	#image{
+		width: 40%;
+	}
+	.long{
+		flex-direction: column;
+		align-items: center;
+	}
+	.icons{
+		width: 100%;
+	}
+	.inside-content{
+		width: 100%;
+		box-sizing: border-box;
+
+	}
+	.inside-text{
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.inside-content{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.inside-header{
+		margin-bottom: 4px;
+	}
+	.game{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.game > .inside-content{
+		padding-left: 0px;
+	}
+	.game > .inside-content > .inside-text{
+		padding-left: 23px;
+	}
+	#two-col{
+		flex-direction: column;
+		padding: 0px;
+		margin-bottom: 0px;
+	}
+	.two{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	#two-col > div:first-child{
+	border-right: none;
+}
+.two > .inside-content > .inside-text {padding-left: 0px;}
+#footer{
+	flex-direction: column;
+	align-items: center;
+}
+#social{
+	width: 95%;
+	padding: 10px;
+}
+#address{
+	padding:10px;
+	border-top: 1px groove grey;
+	border-left: none;
+	width: 95%;
+	align-items: center;
+}
+#footer{
+	padding-left: 10px;
+}
+
+}
