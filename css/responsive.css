@@ -191,6 +191,7 @@
     left: 4vw;
     top: 41vh;
 	z-index: 1;
+	border-radius: 76px;
 	}
 p{
 	font-family: Arial, Helvetica, sans-serif
